@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px){
+    #containerCalculator {
+        width: 280px;
+        height: 450px;
+    }
+
+    #viewScreen{
+        height: 10%;
+        width: 100%; 
+        font-size: 30px;
+    }
+
+    .btnNumber {
+        width: 55px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    #btnZero {
+        width: 118px;
+    }
+
+    .btnOperation {
+        width: 80px;
+        height: 39px;
+        font-size: 15px;
+    }
+
+    #btnResult{
+        height: 65px;
+        font-size: 40px;
+        
+    }
+}

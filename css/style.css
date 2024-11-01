@@ -1,0 +1,127 @@
+@charset "UFT-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#mainContainer {
+    background-color: #686868;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+#containerCalculator {
+    background-color: #333333;
+    width: 380px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 30px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#viewScreen{
+    background-color: #F4F4F8;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+ 
+    font-size: 40px;
+}
+
+#options {
+    display: flex;
+    height: 80%;
+}
+
+#numbers{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btnNumber {
+    width: 80px;
+    height: 85px;
+    margin-right: 8px;
+
+    border: solid 2px rgb(160, 158, 158);
+    border-radius: 12px;
+    
+    font-size: 35px;
+    background-color: #6d6c6d;
+    color: white;
+}
+
+.btnNumber:hover {
+    cursor: pointer;
+    background-color: #414041;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+
+#btnZero {
+    width: 170px;
+}
+
+#operations{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.btnOperation {
+    width: 90px;
+    height: 44px;
+    
+    background-color: #3c1c61;
+    border: solid 2px #6732a5;
+    border-radius: 7px;
+    
+    color: white;
+    font-size: 20px;
+    
+    
+    margin-bottom: 5px;
+}
+
+.btnOperation:hover {
+    cursor: pointer;
+    background-color: #6732a5;
+    border: solid 2px #3c1c61;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+#btnResult{
+    margin-top: 5px;
+    height: 85px;
+    font-size: 70px;
+    
+    background-color: orange;
+    border: solid 2px #724b03;
+    color: black;
+}
+
+#btnResult:hover {
+    background-color: #724b03;
+    border: solid 2px orange;
+    color: white;
+    transition: 0.5s;
+}

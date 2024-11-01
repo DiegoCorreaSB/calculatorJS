@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <title>Login Screen</title>
+</head>
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="containerCalculator">
+            <input type="text"  id="viewScreen">
+
+            <div id="options">
+                <div id="numbers">
+                    <button  onclick="appendNumber('7')" class="btnNumber" id="btnSeven">7</button>
+                    <button  onclick="appendNumber('8')" class="btnNumber" id="btnEight">8</button>
+                    <button  onclick="appendNumber('9')" class="btnNumber" id="btnNine">9</button>
+                    <button  onclick="appendNumber('4')" class="btnNumber" id="btnFour">4</button>
+                    <button  onclick="appendNumber('5')" class="btnNumber" id="btnFive">5</button>
+                    <button  onclick="appendNumber('6')" class="btnNumber" id="btnSix">6</button>
+                    <button  onclick="appendNumber('1')" class="btnNumber" id="btnOne">1</button>
+                    <button  onclick="appendNumber('2')" class="btnNumber" id="btnTwo">2</button>
+                    <button  onclick="appendNumber('3')" class="btnNumber" id="btnThree">3</button>
+                    <button  onclick="appendNumber('0')" class="btnNumber" id="btnZero">0</button>
+                    <button  class="btnNumber"  id="btnNumberFloat">,</button>
+                </div>
+
+                <div id="operations">
+                    <button class="btnOperation" id="btnReset">C</button>
+                    <button class="btnOperation" id="btnDelete"><i class="fa-solid fa-delete-left" id=""></i></button>
+                    <button onclick="setOperation('/')" class="btnOperation" id="btnDivision">/</button>
+                    <button onclick="setOperation('*')" class="btnOperation" id="btnMultiplication">X</button>
+                    <button onclick="setOperation('-')" class="btnOperation" id="btnSubtraction">-</button>
+                    <button onclick="setOperation('+')" class="btnOperation" id="btnSum">+</button>
+                    <button  class="btnOperation" id="btnResult">=</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
