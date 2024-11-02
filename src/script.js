@@ -1,4 +1,8 @@
-//Numbers
+//darkmode
+let modeContainer = document.getElementById ('modeContainer');
+let mainContainer = document.getElementById ('mainContainer');
+let containerCalculator = document.getElementById ('containerCalculator');
+let btnNumber = document = document.getElementsByClassName ('btnNumber')
 
 //Operators
 const btnReset = document.getElementById ('btnReset');
@@ -11,23 +15,26 @@ const btnResult = document.getElementById ('btnResult');
 
 //view
 let viewScreen = document.getElementById ('viewScreen');
-let firstNumber, operation, temporaryNumber, calculate, secondNumber;
+let firstNumber, operation, temporaryNumber, calculate = 0, secondNumber;
 
 //numbers
 function appendNumber(number){
     viewScreen.value += number;
-    temporaryNumber = viewScreen.value
+    temporaryNumber = viewScreen.value;
     console.log(temporaryNumber);
-    secondNumber = parseInt (temporaryNumber)
+    secondNumber = parseInt (temporaryNumber);
     
 }
 
 function setOperation(op){
-    operation = op
-    firstNumber = parseInt(temporaryNumber)
+    operation = op;
     console.log(firstNumber);
-    
-    viewScreen.value = ''
+    if (calculate != 0){
+        firstNumber = calculate;
+    } else {
+         firstNumber = parseInt(temporaryNumber);
+     }
+    viewScreen.value = '';
 }
 
 function calculation() {
@@ -48,6 +55,7 @@ function calculation() {
             return;
     }
 
+    console.log(firstNumber);
 }
 
 btnResult.onclick = () => {
@@ -56,8 +64,9 @@ btnResult.onclick = () => {
 }
 
 btnReset.onclick = () => {
-    viewScreen.value = ''
-    operation = ''
+    viewScreen.value = '';
+    operation = '';
+    calculate = 0;
 }
 
 
@@ -65,5 +74,14 @@ btnDelete.onclick = () => {
     
     viewScreen.value = viewScreen.value.slice(0, -1);
 }
+
+//mododark
+modeContainer.addEventListener ('click', () => {
+    modeContainer.classList.toggle ('darkMode');
+    mainContainer.classList.toggle ('darkMode');
+    containerCalculator.classList.toggle ('darkMode');
+    btnNumber.classList.toggle ('darkMode');
+    
+})
 
 

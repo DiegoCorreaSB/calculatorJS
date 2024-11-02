@@ -12,21 +12,22 @@
 </head>
 <body>
     <div id="mainContainer">
+        
         <div id="containerCalculator">
             <input type="text"  id="viewScreen">
 
             <div id="options">
                 <div id="numbers">
-                    <button  onclick="appendNumber('7')" class="btnNumber" id="btnSeven">7</button>
-                    <button  onclick="appendNumber('8')" class="btnNumber" id="btnEight">8</button>
-                    <button  onclick="appendNumber('9')" class="btnNumber" id="btnNine">9</button>
-                    <button  onclick="appendNumber('4')" class="btnNumber" id="btnFour">4</button>
-                    <button  onclick="appendNumber('5')" class="btnNumber" id="btnFive">5</button>
-                    <button  onclick="appendNumber('6')" class="btnNumber" id="btnSix">6</button>
-                    <button  onclick="appendNumber('1')" class="btnNumber" id="btnOne">1</button>
-                    <button  onclick="appendNumber('2')" class="btnNumber" id="btnTwo">2</button>
-                    <button  onclick="appendNumber('3')" class="btnNumber" id="btnThree">3</button>
-                    <button  onclick="appendNumber('0')" class="btnNumber" id="btnZero">0</button>
+                    <button  onclick="appendNumber('7')" class="btnNumber" >7</button>
+                    <button  onclick="appendNumber('8')" class="btnNumber" >8</button>
+                    <button  onclick="appendNumber('9')" class="btnNumber" >9</button>
+                    <button  onclick="appendNumber('4')" class="btnNumber" >4</button>
+                    <button  onclick="appendNumber('5')" class="btnNumber" >5</button>
+                    <button  onclick="appendNumber('6')" class="btnNumber" >6</button>
+                    <button  onclick="appendNumber('1')" class="btnNumber" >1</button>
+                    <button  onclick="appendNumber('2')" class="btnNumber" >2</button>
+                    <button  onclick="appendNumber('3')" class="btnNumber" >3</button>
+                    <button  onclick="appendNumber('0')" class="btnNumber" id>0</button>
                     <button  class="btnNumber"  id="btnNumberFloat">,</button>
                 </div>
 
@@ -41,7 +42,11 @@
                 </div>
             </div>
         </div>
+        <div class="modeContainer" id="modeContainer">
+            <div class="indicator">
 
+            </div>
+        </div>
     </div>
 
     <script src="src/script.js"></script>
